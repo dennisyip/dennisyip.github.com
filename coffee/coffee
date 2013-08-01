@@ -6,8 +6,9 @@
 
 <body>
 
-	<section>
-		<navigation> 
+
+	<header>
+		<nav> 
 		<h1>Dream Beans Caffe</h1>
 
 			<ul>
@@ -16,8 +17,8 @@
 				<li><a href="specials.html">specials</a></li>
 				<li><a href="contact.html">contact</a></li>
 			</ul>
-		</navigation>
-	</section>	
+		</nav>
+	</header>	
 
 	<section>
 
@@ -43,10 +44,6 @@ trifecta, organic kopi-luwak mocha redeye et instant. Crema, at, french press, a
 
 	</section>
 
-
-
-		<section>
-
 			<footer>
 	
 				<p>123 Latte Lane, Javaville - 555-423-1234</p>
@@ -54,10 +51,7 @@ trifecta, organic kopi-luwak mocha redeye et instant. Crema, at, french press, a
 
 			</footer> 	
 
-		</section>
 	
-
-
 </body>	
 
 
