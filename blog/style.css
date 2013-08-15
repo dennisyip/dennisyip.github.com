@@ -1,0 +1,138 @@
+/*Super blog CSS styling*/
+
+
+.page{
+	min-height: 100%;
+	color:#000;
+	font-size:62.5%;
+	width:95%;
+	margin:auto;
+}
+
+#main-header{
+	display:block;
+	width: 100%;
+	height:auto;
+	border-bottom: 3px #aaa solid;
+	padding:0;
+}
+
+a{
+	text-decoration: none;
+	color:#000;
+}
+
+#top-nav{
+	position:relative;
+	top:60px;
+	display: inline-block;
+	float: right;
+	font-size:16px;
+	padding:0;
+}	
+
+
+#top-nav ul li{
+	display: inline;
+	padding: 0 16px;
+	font-weight: bold;
+	font-family: sans-serif;
+}
+
+
+ul {
+
+	display: block;
+	list-style-type: disc;
+	
+}
+
+#side-nav{
+		display: block;
+		float: left;
+		width: 18%;
+		height: auto;
+		font: 16px sans-serif;
+		font-weight: bold;
+		margin-top: 28px;
+}
+
+#side-nav ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+#side-nav ul li{
+	padding: 11px 0;
+
+
+}
+
+#posts{
+	display: block;
+	float: right;
+	width: 70%;
+	height: auto;
+	font: 16px sans-serif;
+	margin: 32px;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+#posts article{
+	padding: 12px 0;
+}
+
+#posts time{
+	margin:0;
+	padding:0;
+	font-weight: normal;
+}
+
+#posts h2{
+	font-size: 28px;
+	font-family: sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 0;
+	margin: 0;
+}
+
+p{
+	display: block;
+	line-height: 24px;
+
+}
+
+#footer{
+	display: block;
+	clear: both;
+	width:100%;
+	height:16px;
+	border-top: 3px #aaa solid;
+}
+
+#copyright{
+	font-size: 24px;
+	font-weight: bold;
+	padding: 12px 0;
+	margin: 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
