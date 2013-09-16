@@ -1,0 +1,90 @@
+/*portfolio style sheet*/
+
+body{
+	width:90%;
+	margin: 0 auto;
+}
+#content{
+	overflow:auto;
+}
+
+#nav, #feature, #footer{
+	margin:1%;
+}
+
+#nav{
+	background-color: #94B4EB;
+	padding:0.5em 0;
+}
+
+#nav li{
+	display: inline;
+}
+
+#nav li a {
+	color: #FCFCFC;
+	text-align: center;
+}
+
+#nav ul{
+	text-align: center;
+}
+
+h1{
+	font-family: sans-serif;
+	font-size: 3.5em;
+	text-align: center;
+	color:#fff; 
+	text-shadow:-1px -1px 0 #000,-1px 1px 0 #000,1px -1px 0 #000,1px 1px 0 #000;
+	background-color: orange;
+}
+
+
+.column1, .column2, .column3{
+	width:31.3%;
+	float:left;
+	margin:1%;
+}
+.column1{
+	background-color: red;
+}
+
+.column2{
+	background-color: #F57E33;
+}
+
+.column3{
+	background-color: #5EC47F;
+}
+
+img. small{
+	width: 100px;
+	height: 100px;
+}
+
+
+li{
+	
+	padding:0.5em;
+	text-decoration: none;
+}
+
+li a{
+	text-decoration: none;
+	font-size: 1.5em;
+}
+
+#feature{
+	position: relative;
+	height:15em;
+	width:50%;
+	margin-bottom: 1em;
+	background-color: #efefef;
+}
+
+#footer{
+	clear:both;
+	background-color: #efefef;
+	padding:0.5em 0;
+
+}

@@ -1,0 +1,140 @@
+/*Food blog CSS sytling*/
+
+
+header{
+	display:block;
+	height:80%;
+}
+
+body{
+	height:100%;
+	width: 100%;
+	margin: auto;
+
+}
+
+h1{
+	color: #F57507;
+	font-family: sans-serif;
+	position: relative;
+	left: 1em;
+	font-size: 3.5em;
+}
+
+
+#nav{
+	display:inline-block;
+	width:100%;
+	height: 2.3em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	text-decoration: none;
+	background-color: #595758;
+	position: relative;
+	padding: .375em 0;
+	word-spacing: 4em;
+}
+
+#nav ul{	
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left:27em;
+}
+
+#nav ul li{
+	display: inline;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: 200;
+}	
+
+#nav ul li a{
+	color: #FAFBFC;
+	text-decoration: none;
+}
+
+h2{
+	color:#F57507;
+	font-size: 2em;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+
+.content{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#side-nav{
+		display: block;
+		float:left;
+		position:relative;
+		left:1.5em;
+		width: 25%;
+		height: auto;
+		font-family: sans-serif;
+		font-size: 1.3em;
+		font-weight: bold;
+		background: #CFCFCF;
+}
+
+#side-nav ul{
+	list-style-type:none;
+	text-align: center;
+	margin:0;
+	padding:2em;
+}
+
+#side-nav ul li{
+	padding: 0.7em 0;
+}
+
+
+#column1{
+	background-color: #FFFFFF;	
+	padding: 20px;
+	margin:15px;
+	line-height: 1.5em;
+}
+
+
+#contentContainer{
+	width:70%; 
+	margin:auto;
+	float:right;
+}
+
+#image1{
+	float: left;
+	margin: 0 auto;
+	padding: 1em 2.5em;
+}
+
+#image2{
+	float:left;
+	margin: 0 auto;
+	padding: 1em 2.5em;
+}
+
+
+#footer {
+	clear:both;
+	width: 100%;
+	height: 275%;
+	background-color:#595758;
+	color:#FAFBFC;
+	text-align: left;
+	font-family: sans-serif;
+	padding:15px;
+
+}
+
+
+
+
+
+
+

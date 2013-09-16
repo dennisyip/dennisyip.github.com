@@ -70,18 +70,27 @@ h2{
 	font-size: 14px;
 }
 
+
+
 #column1{
 	float:left;
 	width:40%;
 	background-color: #FFFFFF;	
 	padding: 20px;
+	margin:15px;
 }
 
 #column2{
-	float:right;
+	float:left;
 	width:40%;
 	background-color: #FFFFFF;
 	padding: 20px;
+	margin:15px;
+}
+
+#contentContainer{
+	width:900px; 
+	margin:auto;
 }
 
 
