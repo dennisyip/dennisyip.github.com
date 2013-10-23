@@ -26,7 +26,7 @@
 	width: 100%;
 	height:auto;
 	border-bottom: 3px #aaa solid;
-	padding:0;
+	padding-bottom: 1em;
 }
 
 a{
@@ -36,19 +36,26 @@ a{
 
 #top-nav{
 	position:relative;
-	top:4.5em;
+	top:6em;
 	display: inline-block;
 	float: right;
 	font-size: 1.5em;
 	padding:0;
+	word-spacing: 2em;
 }	
 
 
+#top-nav ul{
+	margin:0;
+	padding: 0;
+}
+	
 #top-nav ul li{
-	display: inline;
-	padding: 0 1em;
-	font-weight: bold;
-	font-family: sans-serif;
+		display: inline;
+		padding: 0;
+		margin: 0;
+		font-weight: bold;
+		font-family: sans-serif;
 }
 
 
@@ -56,7 +63,6 @@ ul {
 
 	display: block;
 	list-style-type: disc;
-	
 }
 
 #contentWrapper{
@@ -98,7 +104,7 @@ ul {
 	height: auto;
 	font-family: 'league_gothicregular';
 	font-size: 1.3em;
-	margin: 0 3em;
+	margin: 0 2em;
 	padding: 0;
 }
 
@@ -153,6 +159,24 @@ p{
 	padding: 0.8em 0;
 	margin: 0;
 
+}
+
+@media (max-width: 720px) {
+	 #top-nav{
+		position:absolute;
+		right: 0px;
+		width:400px;
+	}	
+}
+
+@media (max-width: 520px) {
+	 #side-nav{
+		width:50%;
+		line-height: 1.4em;
+	}
+	#maincontent{ 
+		width: 50%;
+	}
 }
 
 

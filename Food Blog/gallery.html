@@ -1,0 +1,227 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Chow Down</title>
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+	<link rel="stylesheet" href="js/jquery.fancybox.css" type="text/css" media="screen"/>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+				openEffect: 'none',
+				closeEffect: 'none'
+		});
+	});
+
+		$(function() {
+	 $('a[href*=#]:not([href=#])').click(function() {
+	   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	       || location.hostname == this.hostname) {
+
+	     var target = $(this.hash);
+	     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	     if (target.length) {
+	       $('html,body').animate({
+	         scrollTop: target.offset().top
+	       }, 1500);
+	       return false;
+	     }
+	   }
+	 });
+	});
+	</script>
+
+</head>	
+
+<body class="page">
+
+	<header>
+		<a href="index.html"><img src="images/chow_down_logo.gif" alt="logo"></a>
+		<nav id="nav"> 
+			<ul>
+				<li><a href="index.html">about</a></li>
+				<li><a href="recipes.html">recipes</a></li>
+				<li><a href="gallery.html">gallery</a></li>
+				<li><a href="contact.html">contact</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<div class="content">
+
+			<div>
+				<nav id="side-nav">
+					<ul>
+						<li><a href="#american">American</a></li>
+						<li><a href="#chinese">Chinese</a></li>
+						<li><a href="#italian">Italian</a></li>
+						<li><a href="#japanese">Japanese</a></li>  
+						<li><a href="#korean">Korean</a></li>
+						<li><a href="#spanish">Spanish</a></li>
+						<li><a href="#vietmanese">Vietmanese</a></li>
+					</ul>
+				</nav>
+			</div>
+
+		<div id="contentContainer">
+
+			<div id="column1">
+
+				<section>
+						<h2>American</h2>
+						<h3>Throw it on the Grill</h3>
+							<figure class="image1">
+								<a class="fancybox" rel="group" href="images/hamburger.jpg" title="Classic Hamburger"><img class="imageborder" src="images/hamburger.jpg" alt="burger"></a>
+								<figcaption class="figcap">Old Fashion Hamburger piled high</figcaption>
+							</figure>
+
+							<figure class="image2">
+								<a class="fancybox" rel="group" href="images/ribs.jpg" title="Barbecue Ribs"><img class="imageborder" src="images/ribs.jpg" alt="ribs"></a>
+								<figcaption class="figcap">Smoked BBQ Ribs</figcaption>
+							</figure>
+
+							<figure class="image1">
+								<a class="fancybox" rel="group" href="images/pulled chicken sandwich.jpg" title="pulled chicken sandwich"><img class="imageborder" src="images/pulled chicken sandwich.jpg" alt="burger"></a>
+								<figcaption>Pulled chicken sandwich</figcaption>
+							</figure>
+
+							<figure class="image2">
+								<a class="fancybox" rel="group" href="images/BBQ chicken.jpg" title="Barbecue chicken"/><img class="imageborder" src="images/BBQ chicken.jpg" alt="ribs"></a>
+								<figcaption>Barbecue Chicken</figcaption>
+							</figure>  		
+				</section>	
+
+					<section class="clear">
+							<h2 id="chinese">Chinese Dim Sum</h2>
+							<h3>Cantonese style</h3>
+
+								<figure class="image1">
+									<a class="fancybox" rel="group" href="images/shumai.jpg" title="Shumai"><img class="imageborder" src="images/shumai.jpg" alt="pork dumpling"></a>
+										<figcaption>Shumai: dumpling pork and mushroom</figcaption>
+								</figure> 
+
+								<figure class="image2">
+									<a class="fancybox" rel="group" href="images/shrimp dumpling.jpg" title="Har gow: Shrimp dumpling "><img class="imageborder" src="images/shrimp dumpling.jpg" alt="shrimp dumping"></a>
+									<figcaption>Har Gow: Shrimp dumpling</figcaption>
+								</figure> 
+
+								<figure class="image1">
+									<a class="fancybox" rel="group" href="images/lions head.jpg" title="Lions Head Meatball"><img class="imageborder" src="images/lions head.jpg" alt="lions head meatball"></a>
+										<figcaption>Lions Head meatball</figcaption>
+								</figure> 
+
+								<figure class="image2">
+									<a class="fancybox" rel="group" href="images/xiao long bao.jpg" title="steamed bun with pork"><img class="imageborder" src="images/xiao long bao.jpg" alt="soup dumpling"></a>
+										<figcaption>Steamed bun with pork</figcaption>
+								</figure>
+					</section>
+
+					<section class="clear">
+							<h2 id="italian">Italian</h2>
+							<h3>Make a Pizza Pie</h3>
+
+								<figure class="image1">
+									<a class="fancybox" rel="group" href="images/hawaiian pizza.jpg" title="Hawaiian Pizza: Area Four Cambridge, MA"><img class="imageborder" src="images/hawaiian pizza.jpg" alt="hawaiian pizza"></a>
+									<figcaption>Classic Hawaiian Pizza with Basil</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<a class="fancybox" rel="group" href="images/mushroom and tomato pizza.jpg" title="white mushroom and tomato pizza"><img class="imageborder" src="images/mushroom and tomato pizza.jpg" alt="mushroom and tomato pizza"></a>
+									<figcaption>White Mushrooms and Tomato Pizza</figcaption>
+								</figure>
+					</section>
+						
+					<section class="clear">
+							<h2 id="japanese">Japanese</h2>
+							<h3>Sensational Sushi</h3>
+
+								<figure class="image1">
+									<a class="fancybox" rel="group" href="images/shasimi.jpg" title="Sashimi plate: Tuna Salmon and mackerel"><img class="imageborder" src="images/shasimi.jpg" alt="fish"></a>
+										<figcaption>Sashimi plate: Tuna, Salmon, and Mackerel</figcaption>
+								</figure> 
+
+								<figure class="image2">
+									<a class="fancybox" rel="group" href="images/salmon with cucumber.jpg" title="Torched Salmon Nigri with Cumcumber"><img class="imageborder" src="images/salmon with cucumber.jpg"></a>
+										<figcaption>Torched Salmon Nigri with Cucumber</figcaption>
+								</figure>
+
+								<figure class="image1">
+									<a class="fancybox" rel="group" href="images/tuna tataki.jpg" title="Tuna Tataki with Habanero and Togarashi"><img class="imageborder" src="images/tuna tataki.jpg" alt="tuna"></a>
+									<figcaption>Tuna Tataki with Habanero and Togarashi</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<img class="imageborder" src="images/eel cucumber.jpg" alt="eel"><figcaption>Smoked Eel with Cucumber</figcaption>
+								</figure>
+
+								<figure class="image1">
+									<img class="imageborder" src="images/giant scallop.jpg" alt="giant scallop"><figcaption>Giant Scallop with Mushroom Kabayaki</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<img class="imageborder" src="images/torched salmon.jpg" alt="torched salmon"><figcaption>Torched Salmon Nigiri</figcaption>
+								</figure>	
+					</section>
+
+					<section class="clear">
+						<h2 id="korean">Korean</h2>
+							<figure class="image1">
+									<img class="imageborder" src="images/japchae.jpg" alt="japchae noodles">
+									<figcaption>japchae noodles</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<img class="imageborder" src="images/bulgogi.jpg" alt="bulgogi beef">
+									<figcaption>bulgogi beef</figcaption>
+								</figure>
+
+					</section>
+
+
+					<section class="clear">
+						<h2 id="spanish">Spanish</h2>
+						<h3>Tacos VS. Burritos</h3>
+								<figure class="image1">
+									<img class="imageborder" src="images/pork taco.jpg" alt="pork taco">
+									<figcaption>Pork Tacos</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<img class="imageborder" src="images/chicken burrito.jpg" alt="chicken burrito">
+									<figcaption>Chicken Burrito</figcaption>
+								</figure>
+					</section>
+
+					<section class="clear">
+						<h2 id="vietmanese">Vietmanese</h2>
+						<h3>PHO noodle bowls</h3>
+
+								<figure class="image1">
+									<img class="imageborder" src="images/beef pho.jpg" alt="beef pho noodles">
+									<figcaption>Beef Pho noodles</figcaption>
+								</figure>
+
+								<figure class="image2">
+									<img class="imageborder" src="images/chicken pho.jpg" alt="chicken pho noodles">
+									<figcaption>Chicken Pho noodles</figcaption>
+								</figure>
+
+					</section>			
+
+			</div>
+
+		</div>
+
+	</div>
+	
+			<footer id="footer">
+	
+				<p>&copy;Chow Down 2013</p>
+
+			</footer> 	
+</body>	
+
+</html>

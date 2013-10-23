@@ -1,0 +1,182 @@
+/*Food blog CSS sytling*/
+@font-face {
+    font-family: 'sansationregular';
+    src: url('sansation-regular-webfont.eot');
+    src: url('sansation-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('sansation-regular-webfont.woff') format('woff'),
+         url('sansation-regular-webfont.ttf') format('truetype'),
+         url('sansation-regular-webfont.svg#sansationregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+header{
+	display:block;
+	height:80%;
+}
+
+body{
+	height:100%;
+	width: 100%;
+	margin: auto;
+
+}
+
+h1{
+	color: #F57507;
+	font-family: 'sansationregular';
+	position: relative;
+	left: 1em;
+	font-size: 3.5em;
+}
+
+h4{
+	font-family: Helvetica, sans-serif;
+	font-size: 1em;
+	position: relative;
+	left: 31em;
+}
+
+#nav{
+	display:inline-block;
+	float: right;
+	width:100%;
+	height: 2.3em;
+	margin-top: 0;
+	margin-bottom: 1em;
+	text-decoration: none;
+	background-color: #595758;
+	position: relative;
+	padding: .375em 0;
+	word-spacing: 4em;
+	border-top: 3px #F57507 solid;
+	border-radius: 2em;
+}
+
+#nav ul{	
+	margin: 0;
+	padding: 0;
+	position: relative;
+	left: 30em;
+}
+
+#nav ul li{
+	display: inline;
+	font-size: 2em;
+	font-family: sans-serif;
+	font-weight: 200;
+}	
+
+#nav ul li a{
+	color: #FAFBFC;
+	text-decoration: none;
+}
+
+#nav ul li a:hover{color:#B3BEFF;}
+
+h2{
+	color:#F57507;
+	font-size: 2em;
+	font-family: sans-serif;
+	text-align: left;
+}
+
+
+.content{
+	width: 100%;
+	font-family: sans-serif;
+	font-size: 14px;
+}
+
+#side-nav{
+		display: block;
+		float:left;
+		position:relative;
+		left:1.5em;
+		width: 25%;
+		height: auto;
+		font-family: sans-serif;
+		font-size: 1.3em;
+		font-weight: bold;
+		background: #CFCFCF;
+		border-radius: 1.6em; 
+		box-shadow: 10px 10px 5px #888888;
+}
+
+#side-nav ul{
+	list-style-type:none;
+	text-align: center;
+	margin:0;
+	padding:1em;
+}
+
+#side-nav ul li{
+	padding: 0.5em 0;
+}
+
+
+#column1{
+	background-color: #FFFFFF;	
+	padding: 20px;
+	margin:15px;
+	line-height: 1.5em;
+}
+
+
+#contentContainer{
+	width:70%; 
+	margin:auto;
+	float:right;
+}
+
+.image1{
+	float: left;
+	margin: 0 auto;
+	padding: 1em 2.5em;
+}
+
+.image2{
+	float:left;
+	margin: 0 auto;
+	padding: 1em 2.5em;
+}
+
+.imageborder{
+	border: 0.4em solid #CFCFCF;
+}
+
+
+.image3{
+	position: relative;
+	margin:0 auto;
+	border: 0.5em solid #CFCFCF;
+}
+
+
+#Top{
+	text-decoration: none;
+	font-size: 1em;
+	font-family: sans-serif;
+}
+
+
+#footer {
+	clear:both;
+	width: 100%;
+	height: 275%;
+	background-color:#595758;
+	color:#FAFBFC;
+	text-align: left;
+	font-family: sans-serif;
+	padding:15px;
+	border-top: 6px #F57507 solid;
+
+}
+
+
+
+
+
+
+
