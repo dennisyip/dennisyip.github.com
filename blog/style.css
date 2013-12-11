@@ -173,6 +173,7 @@ p{
 	 #side-nav{
 		width:50%;
 		line-height: 1.4em;
+		background-color: blue;
 	}
 	#maincontent{ 
 		width: 50%;

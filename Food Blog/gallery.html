@@ -3,36 +3,6 @@
 <head>
 	<title>Chow Down</title>
 	<link href="style.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
-
-	<link rel="stylesheet" href="js/jquery.fancybox.css" type="text/css" media="screen"/>
-	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function() {
-		$(".fancybox").fancybox({
-				openEffect: 'none',
-				closeEffect: 'none'
-		});
-	});
-
-		$(function() {
-	 $('a[href*=#]:not([href=#])').click(function() {
-	   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-	       || location.hostname == this.hostname) {
-
-	     var target = $(this.hash);
-	     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-	     if (target.length) {
-	       $('html,body').animate({
-	         scrollTop: target.offset().top
-	       }, 1500);
-	       return false;
-	     }
-	   }
-	 });
-	});
-	</script>
 
 </head>	
 
@@ -124,7 +94,7 @@
 							<h3>Make a Pizza Pie</h3>
 
 								<figure class="image1">
-									<a class="fancybox" rel="group" href="images/hawaiian pizza.jpg" title="Hawaiian Pizza: Area Four Cambridge, MA"><img class="imageborder" src="images/hawaiian pizza.jpg" alt="hawaiian pizza"></a>
+									<a class="fancybox" rel="group" href="images/hawaiian_pizza.jpg" title="Hawaiian Pizza: Area Four Cambridge, MA"><img class="imageborder" src="images/hawaiian_pizza.jpg" alt="hawaiian pizza"></a>
 									<figcaption>Classic Hawaiian Pizza with Basil</figcaption>
 								</figure>
 
@@ -154,27 +124,30 @@
 								</figure>
 
 								<figure class="image2">
-									<img class="imageborder" src="images/eel cucumber.jpg" alt="eel"><figcaption>Smoked Eel with Cucumber</figcaption>
+									<a class="fancybox" rel="group" href="images/eel cucumber.jpg" title="Sliced cumber with Eel"><img class="imageborder" src="images/eel cucumber.jpg" alt="eel"></a>
+										<figcaption>Smoked Eel with Cucumber</figcaption>
 								</figure>
 
 								<figure class="image1">
-									<img class="imageborder" src="images/giant scallop.jpg" alt="giant scallop"><figcaption>Giant Scallop with Mushroom Kabayaki</figcaption>
+									<a class="fancybox" rel="group" href="images/giant scallop.jpg" title="Gaint scallop with mushroom Kabayaki"><img class="imageborder" src="images/giant scallop.jpg" alt="giant scallop"></a>
+									<figcaption>Giant Scallop with Mushroom Kabayaki</figcaption>
 								</figure>
 
 								<figure class="image2">
-									<img class="imageborder" src="images/torched salmon.jpg" alt="torched salmon"><figcaption>Torched Salmon Nigiri</figcaption>
+									<a class="fancybox" rel="group" href="images/torched salmon.jpg" title="torched salmon nigiri"><img class="imageborder" src="images/torched salmon.jpg" alt="torched salmon"></a>
+									<figcaption>Torched Salmon Nigiri</figcaption>
 								</figure>	
 					</section>
 
 					<section class="clear">
 						<h2 id="korean">Korean</h2>
 							<figure class="image1">
-									<img class="imageborder" src="images/japchae.jpg" alt="japchae noodles">
+									<a class="fancybox" rel="group" href="images/japchae.jpg" title="japchae noodles"><img class="imageborder" src="images/japchae.jpg" alt="japchae noodles"></a>
 									<figcaption>japchae noodles</figcaption>
 								</figure>
 
 								<figure class="image2">
-									<img class="imageborder" src="images/bulgogi.jpg" alt="bulgogi beef">
+									<a class="fancybox" rel="group" href="images/bulgogi.jpg" title="bulgogi beef"><img class="imageborder" src="images/bulgogi.jpg" alt="bulgogi beef"></a>
 									<figcaption>bulgogi beef</figcaption>
 								</figure>
 
@@ -221,7 +194,41 @@
 	
 				<p>&copy;Chow Down 2013</p>
 
-			</footer> 	
+			</footer>
+
+	<!--jQuery light boxes and simple scroll -->			
+
+	<script type="text/javascript" src="js/jquery-1.9.1.js"></script>
+
+	<link rel="stylesheet" href="js/jquery.fancybox.css" type="text/css" media="screen"/>
+	<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function() {
+		$(".fancybox").fancybox({
+				openEffect: 'none',
+				closeEffect: 'none'
+		});
+	});
+
+		$(function() {
+	 $('a[href*=#]:not([href=#])').click(function() {
+	   if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+	       || location.hostname == this.hostname) {
+
+	     var target = $(this.hash);
+	     target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	     if (target.length) {
+	       $('html,body').animate({
+	         scrollTop: target.offset().top
+	       }, 1500);
+	       return false;
+	     }
+	   }
+	 });
+	});
+	</script>		
+			 	
 </body>	
 
 </html>
