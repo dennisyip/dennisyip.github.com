@@ -13,6 +13,12 @@
 			description: 'A beautiful gem',
 			canPurchase: true,
 			soldOut: false,
+			images: [
+				{
+					full: 'blue-gem.jpg',
+					thumb: 'blue-gem.jpg'
+				}
+			],
 		},
 		{
 			name: 'Pentagonal Gem',
@@ -20,6 +26,12 @@
 			description: 'Another Beautiful Gem',
 			canPurchase: true,
 			soldOut: false,
+			images: [
+				{
+					full: 'red-gem.jpg',
+					thumb: 'blue-gem.jpg'
+				}
+			],
 		}
 
 	];
