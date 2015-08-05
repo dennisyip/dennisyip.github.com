@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html ng-app="gemStore">
 	<head>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/bootstrap.min.css">
 	</head>
-	<body ng-app="gemStore">
+	<body ng-controller="StoreController as store">
 
-	<div ng-controller="StoreController as store">
-		<h1> {{store.product.name}}</h1>
-		<h2>${{store.product.price}}</h2>
-	 	<h3>{{store.product.description}}</h3>
+	<div ng-repeat="product in store.products">
+		<h1 ng-hide="store.product.soldOut"> {{product.name}}</h1>
+		<h2>${{product.price}}</h2>
+	 	<h3>{{product.description}}</h3>
+	 	<button ng-show="product.canPurchase"> Add to Cart</button>
 	</div>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
