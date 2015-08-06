@@ -1,0 +1,143 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,700,300);
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #A4D3EE;
+	background-color: #330033;
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 1.3em;
+	text-align: center;
+	font-weight: 300;
+	color: #ffffff;
+	padding: 16px;
+	font-style: italic;
+}
+
+h3{
+	font-size: 1em;
+	font-style: italic;
+	text-align: center;
+}
+
+p{
+	font-size: 0.938em; 
+	text-align: center;
+}
+
+ul{
+	list-style-type: none;
+}
+
+.logo{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 32px;
+	width: 420px;
+}
+
+.coverphoto{
+	background: url(images/coverphoto.jpg);
+	height: 286px;
+	background-repeat:no-repeat;
+	background-size:cover;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	padding: 0;
+}
+
+.intro{
+	width: 60%;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	font-weight: 300;
+}
+
+
+.event-button{
+	padding:20px 32px;
+	text-align: center;
+	background-color: #f6833e;
+	-webkit-border-top-left-radius:6px;
+	-moz-border-radius-topleft:6px;
+	border-top-left-radius:6px;
+	-webkit-border-top-right-radius:6px;
+	-moz-border-radius-topright:6px;
+	border-top-right-radius:6px;
+	-webkit-border-bottom-right-radius:6px;
+	-moz-border-radius-bottomright:6px;
+	border-bottom-right-radius:6px;
+	-webkit-border-bottom-left-radius:6px;
+	-moz-border-radius-bottomleft:6px;
+	border-bottom-left-radius:6px;
+	border: none;
+	color: #fff;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: 500px;
+	text-shadow: 1px 1px #6d6d6d;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	width:168px;
+}
+
+.event-button:hover{
+	background-color: #fe5f2c;
+}
+
+.container1{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+.donators{
+	font-size: 0.875em;
+	background-color: #fbfbf2;
+	border-radius: 8px;
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0; 
+	columns: 3;
+    -webkit-columns: 3;
+    -moz-columns: 3;
+}
+
+.donators li{
+	padding:12px;
+	color: #000000;
+	text-align: center;
+}
+
+.social-icons{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5%;
+	width: 147px;
+}
+
+.smallicon{
+	height: 36px;
+	width: 36px;
+	padding: 5px;
+}
+
+.menu-photo{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	margin-top: 32px; 
+}
+
+
+
+
