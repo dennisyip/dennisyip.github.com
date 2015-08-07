@@ -9,8 +9,16 @@
 		{{product.name}}
 		<em class="pull-right">{{product.price | currency}}</em>
 		<img ng-src="{{product.images[0].full}}"/>
-	 	<h3>{{product.description}}</h3>
 	 	<button ng-show="product.canPurchase"> Add to Cart</button>
+
+	 		<section ng-controller="PanelController as panel">
+	 			<ul class="nav nav-pills">
+	 				<li ng-show="{active: panel.isSelected(1)}"> <a href ng-click="panel.selectTab(1)"></a>{{product.description}}</li>
+	 				<li ng-show="{active: panel.isSelected(2)}"> <a href ng-click="panel.selectTab(2)"></a>Specifications</li>
+	 				<li ng-show="{active: panel.isSelected(3)}"> <a href ng-click="panel.selectTab(3)"></a>Reviews</li>
+	 			</ul>
+	 		</section>
+
 	</li>
 
 	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
