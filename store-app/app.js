@@ -5,6 +5,15 @@
 		this.products = gems;
 	});
 
+	app.controller('GalleryController', function(){
+    	this.current = 0;
+
+    this.setCurrent = function(newGallery){
+      this.current = newGallery || 0;
+    	};
+
+  	});
+
 	var gems = [
 
 		{
@@ -15,8 +24,8 @@
 			soldOut: false,
 			images: [
 				{
-					full: 'blue-gem.jpg',
-					thumb: 'blue-gem.jpg'
+					'blue-gem.jpg',
+					'blue-gem.jpg'
 				}
 			],
 		},
@@ -28,8 +37,8 @@
 			soldOut: false,
 			images: [
 				{
-					full: 'red-gem.jpg',
-					thumb: 'blue-gem.jpg'
+					'red-gem.jpg',
+					'blue-gem.jpg'
 				}
 			],
 		}
