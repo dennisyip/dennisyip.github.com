@@ -1,66 +1,84 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Dennis Yip UI developer</title>
-		<link href="style.css" rel="stylesheet" type="text/css">
-	</head>	
-
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+	</head>
+	
 	<body>
-		<header>
-			<h1>Dennis Yip</h1>
-			<nav id="nav">
-				<ul>
-					<li><a href="about.html">About</a></li>
-					<li><a href="work.html">work</a></li>
-				</ul>	
-			</nav>
-		</header>	
-		<div id="content">
-			<div id="feature">
-
-				<h2>Hello There</h2>
-
-				<p>My name is Dennis. I am a front-end developer based in Boston, MA. I am learning the fundamentals to self code websites using HTML, CSS, and Javascript.</p> 
-
-				<p>What I love about front-end development is the problem solving. I enjoying making a great design come to life. Technology is always evolving, so staying up on the latest techniques is not only necessary, it's whats keeps the field exciting.</p>
-
-			</div>
-			<div class="column1">
-				<h3>Interests</h3>
+			<section class="main-container">	
+			 <div class="arrow">
+				<nav data-scroll="" id="home">
 					<ul>
-						<li>Rock Climbing</li>
-						<li>Traveling</li>
-						<li>Technology</li>
-						<li>Hand drawing</li>
-						<li>Photography</li>
-					</ul>
+						<li><a data-scroll="" data-options="easing: linear" href="#portfolio">portfolio</a></li>
+						<li><a href="CV.html">resume</a></li>
+						<li><a data-scroll="" data-options="easing: linear" href="#icons">contact</a></li>
+					</ul>	
+				</nav>
+				<div class="welcome"><!-- 
+					 --><header class="name-title">
+						<h1 class="name">Dennis Yip</h1>
+						<h2 class="job-title">UI developer</h2>
+					</header><!-- name-title -->
+				</div><!-- end welcome -->
+			</div><!-- arrow -->
+			</section><!--  main container -->	
+			<!-- <div class="top-arrow-home">
+				<a data-scroll data-options="easing: linear" href="#home">top</a>
+			</div>	 -->
+			<div class="about">
+			 <div class="intro-container">
+				<p class="intro"> </p> 
 
-			</div>
-			<div class="column2">
-				<h3>Education</h3>
-					<p> University of Massachusetts Amherst<br />
-						B.F.A Architecture<br />
-						Minor Chinese Language
-					</p>	
-			</div>
-			<div class="column3">
-				<h3>Skills</h3>
-				<ul>
-					<li>Adobe Creative Suite</li>
-					<li>Javascript/Jquery</li>
-					<li>HTML5/CSS3</li>
-				</ul>	
-			</div>
-		</div>
+				<p class="intro"> I'm a Front end developer based in Boston.  I have a passion for building websites and applications. If you would like help on a web project, please email me <a class="intro-link" href="mailto:dennisyip1@gmail.com">dennisyip1@gmail.com</a>
+			 </div><!-- about -->
+			 </div><!-- intro-container -->   
 
-		<div id="footer">
-			<p>Copyright<br>
-				&copy; By Dennis Yip</p>
-			</div>
-			</nav>	
-		
+			 <div class="portfolio-main row" id="portfolio">
+			 	<div class="portfolio-projects row">
+				 	<h1 class="portfolio-title">portfolio</h1>
+					 			<figure class="items span_one_of_three">
+								<a href="project_1.html" alt="project 1 page"><img src="images/MobileUI_screen_small.png"></a>
+								<figcaption>MOCA Systems Reporting Panel : UI Design</figcaption>
+								</figure>
+								<figure class="items span_one_of_three">
+									<a href="project_2.html" alt="project 2 page"><img src="images/cc_small.png"></a>
+									<figcaption>Enerchi Bites Landing Page </figcaption>
+								</figure>
+								<figure class="items span_one_of_three">
+									<a href="project_3.html" alt="project 3 page"><img src="images/oldIA_small2.png"></a>
+									<figcaption>Families Creating Together: Website</figcaption>
+								</figure>
+								<figure class="items span_one_of_three">
+									<a href="project_4.html" alt="project 4 page"><img src="images/eitc_small2.png"></a>
+									<figcaption>MOCA Landing Page </figcaption>
+								</figure>
+								<figure class="items span_one_of_three">
+									<a href="project_5.html" alt="project 5 page"><img src="images/foodapp_small.png"></a>
+									<figcaption>Dashboard Design </figcaption>
+								</figure>
+								<figure class="items span_one_of_three">
+									<a href="project_6.html" alt="project 6 page"><img src="images/convo_small.jpg"></a>
+									<figcaption>Touchplan.io website design</figcaption>
+				</figure></div><!-- portfolio -->		
+			</div><!-- portfolio-main -->
 
-		
+			 <ul data-scroll="" id="icons">
+					<li id="linkedin"><a href="https://www.linkedin.com/in/denniskyip"><span class="icon-linkedin sm"></span></a></li>
+					<li id="email"><a href="mailto:dennisyip1@gmail.com"><span class="icon-mail sm"></span></a></li>
+					<li id="twitter"><a href=""><span class="icon-twitter sm"></span></a></li>
+					<li id="github"><a href="https://github.com/dennisyip"><span class="icon-github sm"></span></a></li>
+				</ul><!-- icons -->
 
-	</body>	
-</html>
+			
+			<footer>This site was designed and coded by Dennis K. Yip</footer>
+			<div class="copyright">©2015 Dennis Yip</div>
+
+		<script src="js/smooth-scroll.js"></script>
+		<script>
+	    smoothScroll.init();
+		</script>
+			
+	</body>
+</html>	
