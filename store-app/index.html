@@ -2,64 +2,69 @@
 <html ng-app="gemStore">
 	<head>
 		<link rel="stylesheet" type="text/css" href="bootstrap-3.3.5-dist/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
 	</head>
+
+
+
 	<body ng-controller="StoreController as store">
 
-	<div ng-repeat="product in store.products">
-		<h3> {{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
-		
-		<div ng-controller="GalleryController as gallery">
-			<div class="img-wrap">
-				<img ng-src="{{product.images[gallery.current]}}"/>
+		<header>
+			<h1> Angular Store</h1>
+			<h2> Diamonds and Gems</h2>
+		</header>
+
+		<div class="list-group">
+			<div ng-repeat="product in store.products">
+				<h3> {{product.name}} <em class="pull-right">{{product.price | currency}}</em></h3>
+				
+				<div ng-controller="GalleryController as gallery" ng-show="product.images.length">
+					<div class="img-wrap">
+						<img ng-src="{{product.images[gallery.current]}}"/>
+					</div>
+				
+
+					<ul class="img-thumbnails clearfix">
+		            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
+		              <img ng-src="{{image}}"/>
+		            </li>
+		          </ul>
+
+		        </div>  
+
+			 		<section ng-controller="TabController as tab">
+			 			<ul class="nav nav-pills">
+			 				<li ng-show="{active: tab.isSelected(1)}"> <a href ng-click="tab.selectTab(1)"></a>{{product.description}}</li>
+			 				<li ng-show="{active: tab.isSelected(2)}"> <a href ng-click="tab.selectTab(2)"></a>Specifications</li>
+			 				<li ng-show="{active: tab.isSelected(3)}"> <a href ng-click="tab.selectTab(3)"></a>Reviews</li>
+			 			</ul>
+
+
+			 			<div ng-show="tab.isSet(1)">
+				            <h4>Description</h4>
+				            <blockquote>{{product.description}}</blockquote>
+				         </div>	
+
+			 			<div ng-show="tab.isSet(2)">
+				            <h4>Specs</h4>
+				            <blockquote>Shine: {{product.shine}}</blockquote>
+				         </div>		
+
+			 			<div ng-show="tab.isSet(3)">	
+				             <h4>Reviews</h4>
+				              <li ng-repeat="review in product.reviews">
+				                <blockquote>
+				                  <strong> Stars: {{review.stars]}</strong>
+				                  {{review.body}}
+				                  <cite class="clearfix"> by: {{review.author}}</cite>
+				                </blockquote>
+				              </li>
+				            </ul>
+				         </div>
+			 		</section>
 			</div>
-		
+		</div>
 
-			<ul class="img-thumbnails clearfix">
-            <li class="small-image pull-left thumbnail" ng-repeat="image in product.images">
-              <img ng-src="{{image}}"/>
-            </li>
-          </ul>
-
-        </div>  
-		
-	 	<button ng-show="product.canPurchase"> Add to Cart</button>
-
-	 		<section ng-controller="PanelController as panel">
-	 			<ul class="nav nav-pills">
-	 				<li ng-show="{active: panel.isSelected(1)}"> <a href ng-click="panel.selectTab(1)"></a>{{product.description}}</li>
-	 				<li ng-show="{active: panel.isSelected(2)}"> <a href ng-click="panel.selectTab(2)"></a>Specifications</li>
-	 				<li ng-show="{active: panel.isSelected(3)}"> <a href ng-click="panel.selectTab(3)"></a>Reviews</li>
-	 			</ul>
-
-
-	 			<ul>
-
-	 			<div ng-show="tab.isSet(1)">
-		            <h4>Description</h4>
-		            <blockquote>{{product.description}}</blockquote>
-		         </div>	
-
-	 			<div ng-show="tab.isSet(2)">
-		            <h4>Specs</h4>
-		            <blockquote>Shine: {{product.shine}}</blockquote>
-		         </div>		
-
-	 			<div ng-show="tab.isSet(3)">	
-		             <h4>Reviews</h4>
-		              <li ng-repeat="review in product.reviews">
-		                <blockquote>
-		                  <strong> Stars</strong>
-		                  
-		                  <cite class="clearfix">—</cite>
-		                </blockquote>
-		              </li>
-		            </ul>
-		         </div>
-	 		</section>
-
-	</div>
-
-	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
-	<script type="text/javascript" src="app.js"></script>
 	</body>
 </html>
