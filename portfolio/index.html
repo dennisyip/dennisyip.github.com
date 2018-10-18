@@ -1,84 +1,437 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
-	</head>
-	
-	<body>
-			<section class="main-container">	
-			 <div class="arrow">
-				<nav data-scroll="" id="home">
-					<ul>
-						<li><a data-scroll="" data-options="easing: linear" href="#portfolio">portfolio</a></li>
-						<li><a href="CV.html">resume</a></li>
-						<li><a data-scroll="" data-options="easing: linear" href="#icons">contact</a></li>
-					</ul>	
-				</nav>
-				<div class="welcome"><!-- 
-					 --><header class="name-title">
-						<h1 class="name">Dennis Yip</h1>
-						<h2 class="job-title">UI developer</h2>
-					</header><!-- name-title -->
-				</div><!-- end welcome -->
-			</div><!-- arrow -->
-			</section><!--  main container -->	
-			<!-- <div class="top-arrow-home">
-				<a data-scroll data-options="easing: linear" href="#home">top</a>
-			</div>	 -->
-			<div class="about">
-			 <div class="intro-container">
-				<p class="intro"> </p> 
+<!DOCTYPE html>
+<html lang="en">
 
-				<p class="intro"> I'm a Front end developer based in Boston.  I have a passion for building websites and applications. If you would like help on a web project, please email me <a class="intro-link" href="mailto:dennisyip1@gmail.com">dennisyip1@gmail.com</a>
-			 </div><!-- about -->
-			 </div><!-- intro-container -->   
+  <head>
 
-			 <div class="portfolio-main row" id="portfolio">
-			 	<div class="portfolio-projects row">
-				 	<h1 class="portfolio-title">portfolio</h1>
-					 			<figure class="items span_one_of_three">
-								<a href="project_1.html" alt="project 1 page"><img src="images/MobileUI_screen_small.png"></a>
-								<figcaption>MOCA Systems Reporting Panel : UI Design</figcaption>
-								</figure>
-								<figure class="items span_one_of_three">
-									<a href="project_2.html" alt="project 2 page"><img src="images/cc_small.png"></a>
-									<figcaption>Enerchi Bites Landing Page </figcaption>
-								</figure>
-								<figure class="items span_one_of_three">
-									<a href="project_3.html" alt="project 3 page"><img src="images/oldIA_small2.png"></a>
-									<figcaption>Families Creating Together: Website</figcaption>
-								</figure>
-								<figure class="items span_one_of_three">
-									<a href="project_4.html" alt="project 4 page"><img src="images/eitc_small2.png"></a>
-									<figcaption>MOCA Landing Page </figcaption>
-								</figure>
-								<figure class="items span_one_of_three">
-									<a href="project_5.html" alt="project 5 page"><img src="images/foodapp_small.png"></a>
-									<figcaption>Dashboard Design </figcaption>
-								</figure>
-								<figure class="items span_one_of_three">
-									<a href="project_6.html" alt="project 6 page"><img src="images/convo_small.jpg"></a>
-									<figcaption>Touchplan.io website design</figcaption>
-				</figure></div><!-- portfolio -->		
-			</div><!-- portfolio-main -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-			 <ul data-scroll="" id="icons">
-					<li id="linkedin"><a href="https://www.linkedin.com/in/denniskyip"><span class="icon-linkedin sm"></span></a></li>
-					<li id="email"><a href="mailto:dennisyip1@gmail.com"><span class="icon-mail sm"></span></a></li>
-					<li id="twitter"><a href=""><span class="icon-twitter sm"></span></a></li>
-					<li id="github"><a href="https://github.com/dennisyip"><span class="icon-github sm"></span></a></li>
-				</ul><!-- icons -->
+    <title>Dennis K. Yip Portfolio</title>
 
-			
-			<footer>This site was designed and coded by Dennis K. Yip</footer>
-			<div class="copyright">©2015 Dennis Yip</div>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-		<script src="js/smooth-scroll.js"></script>
-		<script>
-	    smoothScroll.init();
-		</script>
-			
-	</body>
-</html>	
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/creative.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <style type="text/css">
+        @font-face{
+            font-family:"Avenir LT W01_45 Book1475508";
+            src:url("Fonts/710789a0-1557-48a1-8cec-03d52d663d74.eot?#iefix");
+            src:url("Fonts/710789a0-1557-48a1-8cec-03d52d663d74.eot?#iefix") format("eot"),url("Fonts/065a6b14-b2cc-446e-9428-271c570df0d9.woff2") format("woff2"),url("Fonts/65d75eb0-2601-4da5-a9a4-9ee67a470a59.woff") format("woff"),url("Fonts/c70e90bc-3c94-41dc-bf14-caa727c76301.ttf") format("truetype");
+        }
+        @font-face{
+            font-family:"Avenir LT W01_45 Book O1475514";
+            src:url("Fonts/d8c50fcc-bc32-4f31-8c24-b170c64e2254.eot?#iefix");
+            src:url("Fonts/d8c50fcc-bc32-4f31-8c24-b170c64e2254.eot?#iefix") format("eot"),url("Fonts/476612d9-282d-4f76-95cd-b4dd31e7ed21.woff2") format("woff2"),url("Fonts/f1ebae2b-5296-4244-8771-5f40e60a564a.woff") format("woff"),url("Fonts/04d1bf6c-070d-4b7e-9498-6051c9f0c349.ttf") format("truetype");
+        }
+    </style>
+    <script type="text/javascript">
+    var MTIProjectId='54bb9b77-a36c-4e7e-afc1-2a964ea94d28';
+     (function() {
+            var mtiTracking = document.createElement('script');
+            mtiTracking.type='text/javascript';
+            mtiTracking.async='true';
+             mtiTracking.src='mtiFontTrackingCode.js';
+            (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild( mtiTracking );
+       })();
+    </script>
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Dennis Yip</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header class="masthead text-center text-white d-flex">
+      <div class="container my-auto">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <h1 class="text-uppercase mb-3">
+              Dennis Yip
+            </h1>
+            <h3 class="text-uppercase">Front-End Developer&nbsp;|&nbsp; Boston, MA</h3>
+            <hr class="yellow">
+          </div>
+          <div class="col-lg-8 mx-auto">
+            <p class="text-faded mb-5">
+             Front-end developer with over 5 year of experience designing and coding web projects. I am passionated about software development and technology. I focus on writting clean, elegant, and efficient code for web applications  </p>
+            <a class="down-trigger js-scroll-trigger" href="#about">
+              <!-- <div id="triangle-down"></div> -->
+              <i class="fa fa-angle-down down-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 mx-auto">
+            <h2 class="section-heading text-center text-uppercase text-white">About Me</h2>
+            <hr class="yellow my-4">
+          </div> 
+
+          <div class="col-lg-4 col-md-6 text-center">
+            <img class="img-fluid" src="img/portfolio/me.jpg" alt="">
+            <h1 class="text-white mt-3 text-center">叶嘉杰</h1>
+          </div> 
+
+          <div class="col-lg-8 col-md-6">
+            <p class="text-faded mt-4 mb-4">Hello, I'm Dennis. I am a front-end developer based in the Boston Area. 
+              <br> 
+              <br>
+               I graduated from University of Massachusetts Amherst with a Bachleors in Architecture and a minors in Computer Science and Chinese. I have a passion for UI design and creating intuitive dynamic user experiences. 
+            <br>
+            <br>When I am not writing coding, I spend my time outdoors rock climbing, hiking and kayaking.</p>
+
+            <a href="img/Dennis_Yip_Resume.pdf" class="btn btn-primary btn-xl mr-3">View Resume</a>
+          </div>
+
+        
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">My Skills</h2>
+            <hr class="yellow my-4">
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box mt-4">
+              <h3 class="mb-3 text-uppercase">Development</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-md-6">
+            <div class="service-box mt-4">
+              <h3 class="mb-3 text-uppercase">Design</h3>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box mt-2 mx-auto">
+              <p class="text-muted mb-1">Ruby on Rails</p>
+              <p class="text-muted mb-1">Javascript</p>
+              <p class="text-muted mb-1">Angular JS</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box mt-2 mx-auto">
+              <p class="text-muted mb-1">Jquery</p>
+              <p class="text-muted mb-1">HTML 5/ CSS 3</p>
+              <p class="text-muted mb-1">ReactJS</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box mt-2 mx-auto">
+              <p class="text-muted mb-1">UI Design</p>
+              <p class="text-muted mb-1">User Experience</p>
+              <p class="text-muted mb-1">Wireframing</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <div class="service-box mt-2 mx-auto">
+              <p class="text-muted mb-1">Interaction Design</p>
+              <p class="text-muted mb-1">Adobe Creative Suite</p>
+              <p class="text-muted mb-1">Sketch</p>
+            </div>
+          </div>
+
+
+
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">My Work</h2>
+            <hr class="yellow my-4">
+            <br>
+          </div>
+        </div>
+      </div>
+      
+      <div class="container p-0">
+        <div class="row">
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a class="portfolio-box" href="rockcliff.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/jrockcliff_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design & Development
+                  </div>
+                  <div class="project-name">
+                    J Rock Cliff Realtors
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="park-company.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/park_thumbnail.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    UI Design
+                  </div>
+                  <div class="project-name">
+                    Park Company Realtors
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="bolo-platform.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/bolo-admin-thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Full Stack Development
+                  </div>
+                  <div class="project-name">
+                    Boston Logic Platform Redesign
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a class="portfolio-box" href="jackconway.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/jack_conway_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design & Development
+                  </div>
+                  <div class="project-name">
+                    Jack Conway Realtor
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a class="portfolio-box" href="crowne.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/crowne_realty_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design & Development
+                  </div>
+                  <div class="project-name">
+                    Crowne Realty
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a class="portfolio-box" href="hardy.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/hardy_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design &amp; Development
+                  </div>
+                  <div class="project-name">
+                    Hardy Real Estate, Rome Georgia
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="peabody.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/peabody-smith-thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design &amp; Development
+                  </div>
+                  <div class="project-name">
+                    Peabody Smith Realty
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <div class="col-lg-4 col-sm-6">
+            <a class="portfolio-box" href="usaj.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/usaj_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design &amp; Development
+                  </div>
+                  <div class="project-name">
+                    USAJ
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <a class="portfolio-box" href="jfinnegan.html">
+              <img class="img-fluid" src="img/portfolio/thumbnails/jf_finnegan_thumb.jpg" alt="">
+              <div class="portfolio-box-caption">
+                <div class="portfolio-box-caption-content">
+                  <div class="project-category text-faded">
+                    Web Design &amp; Development
+                  </div>
+                  <div class="project-name">
+                    Better Homes &amp; Gardens JF Finnegan Realtors
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section id="contact" class="bg-primary text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h2 class="section-heading">Contact Me</h2>
+            <hr class="my-4">
+            <p class="mb-5">Have a question or want to work together? &nbsp; Please Contact Me </p>
+          </div>
+        </div>
+        <div class="row col-lg-8 mx-auto">
+
+            <div class="col-lg-4 text-center">
+              <a href="mailto:dennisyip1@gmail.com">
+                <i class="fa fa-envelope fa-3x mb-3 sr-contact"></i>
+                <p>
+                  Email Me
+                </p>
+              </a>  
+            </div>
+            <div class="col-lg-4 text-center">
+              <a href="https://www.linkedin.com/in/denniskyip/">
+                <svg width="50px" class="mb-3" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="linkedin-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="portfolio" transform="translate(-690.000000, -2265.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="Linkedin" transform="translate(665.000000, 2265.000000)">
+                                <g id="linkedin-logo" transform="translate(25.000000, 0.000000)">
+                                    <path d="M46.307947,0 L3.69437799,0 C1.6538677,0 0,1.60339721 0,3.58238902 L0,46.4160998 C0,48.3952078 1.65444895,50 3.69437799,50 L46.307947,50 C48.3479923,50 50,48.3941616 50,46.4160998 L50,3.58238902 C50,1.60397844 48.3479923,0 46.307947,0 Z M15.1585746,41.8533984 L7.60393199,41.8533984 L7.60393199,19.2790118 L15.1585746,19.2790118 L15.1585746,41.8533984 Z M11.3820089,16.1949744 L11.3312083,16.1949744 C8.7978043,16.1949744 7.15556145,14.4624266 7.15556145,12.2933707 C7.15556145,10.0806058 8.84604743,8.39502183 11.4296708,8.39502183 C14.0135267,8.39502183 15.6028765,10.0801408 15.6530958,12.2933707 C15.6530958,14.4628916 14.0141079,16.1949744 11.3820089,16.1949744 Z M42.3908368,41.8533984 L34.8386354,41.8533984 L34.8386354,29.7753175 C34.8386354,26.7404526 33.7443881,24.6696255 31.0132454,24.6696255 C28.9239107,24.6696255 27.6836552,26.066684 27.1390309,27.4154999 C26.9372235,27.8972282 26.8872366,28.5709968 26.8872366,29.2438354 L26.8872366,41.8529334 L19.3364302,41.8529334 C19.3364302,41.8529334 19.4352414,21.3958728 19.3364302,19.2786631 L26.8883991,19.2786631 L26.8883991,22.4790639 C27.8909263,20.9412301 29.6824323,18.7475297 33.69289,18.7475297 C38.6636768,18.7475297 42.3908368,21.97211 42.3908368,28.9091598 L42.3908368,41.8533984 Z M26.8395747,22.5561626 C26.8534497,22.5334126 26.8728247,22.5060376 26.8920747,22.4794126 L26.8920747,22.5561626 L26.8395747,22.5561626 Z" id="LinkedIn__x28_alt_x29_"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>
+                  Linkedin
+                </p>
+              </a>
+            </div>
+            <div class="col-lg-4 text-center">
+              <a href="https://github.com/dennisyip">
+                <svg width="50px" class="mb-3" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <defs></defs>
+                    <g id="github-icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="portfolio" transform="translate(-823.000000, -2265.000000)" fill="#FFFFFF" fill-rule="nonzero">
+                            <g id="Github" transform="translate(798.000000, 2265.000000)">
+                                <g id="github" transform="translate(25.000000, 0.000000)">
+                                    <path d="M25,0 C11.1928711,0 0,11.1928711 0,25 C0,38.8071289 11.1928711,50 25,50 C38.8071289,50 50,38.8071289 50,25 C50,11.1928711 38.8071289,0 25,0 Z M39.7312984,39.7553677 C37.8165698,41.6712953 35.5882752,43.1750254 33.1078488,44.2248634 C32.4778101,44.4915166 31.8379845,44.7255896 31.1891473,44.9274703 L31.1891473,41.2072217 C31.1891473,39.2517325 30.5189922,37.8134536 29.1784884,36.8922879 C30.0184109,36.8115163 30.789438,36.6983583 31.4919574,36.5529111 C32.1944767,36.4074639 32.9375,36.1973412 33.7206395,35.9226399 C34.5039729,35.6479386 35.2064922,35.3206824 35.8281977,34.9408713 C36.4500969,34.5610601 37.0475775,34.068188 37.6208333,33.462158 C38.1942829,32.856128 38.6746124,32.1693263 39.0622093,31.4016559 C39.4498062,30.6339856 39.7567829,29.7128199 39.9827519,28.638159 C40.2089147,27.5634981 40.3218992,26.3796548 40.3218992,25.0868231 C40.3218992,22.5819313 39.5063953,20.4487056 37.8751938,18.687146 C38.6182171,16.74785 38.5374031,14.6388655 37.6329457,12.3601926 L37.0273256,12.287469 C36.6075581,12.2389866 35.8524225,12.4167231 34.7623062,12.8207754 C33.6721899,13.2248277 32.4488372,13.8873882 31.0922481,14.8085539 C29.1705426,14.2752475 27.175969,14.0085942 25.1088178,14.0085942 C23.0254845,14.0085942 21.0390504,14.2752475 19.1495155,14.8085539 C18.2936047,14.2267651 17.4820736,13.7460136 16.7149225,13.3662024 C15.9477713,12.9863913 15.3341085,12.7278831 14.8738372,12.590484 C14.4135659,12.4530849 13.985562,12.3682407 13.5899225,12.3359514 C13.1942829,12.3036621 12.9399225,12.2955171 12.8268411,12.3117102 C12.7137597,12.3279033 12.6330426,12.3439995 12.584593,12.3601926 C11.6802326,14.6550586 11.5994186,16.7640431 12.342345,18.687146 C10.7112403,20.4487056 9.89563953,22.5819313 9.89563953,25.0868231 C9.89563953,26.3796548 10.0087209,27.5634981 10.2347868,28.638159 C10.4608527,29.7128199 10.7677326,30.6339856 11.1553295,31.4016559 C11.5429264,32.1693263 12.0233527,32.856128 12.5967054,33.462158 C13.1700581,34.068188 13.7675388,34.5610601 14.3893411,34.9408713 C15.0111434,35.3206824 15.7136628,35.6479386 16.4968992,35.9226399 C17.2801357,36.1973412 18.023062,36.4074639 18.7255814,36.5529111 C19.4281008,36.6983583 20.1992248,36.8115163 21.0390504,36.8922879 C19.7147287,37.7972604 19.0526163,39.2356363 19.0526163,41.2072217 L19.0526163,45 C18.321124,44.7821201 17.6000969,44.5246785 16.8917636,44.2248634 C14.4114341,43.1750254 12.1830426,41.6712953 10.2684109,39.7553677 C8.35387597,37.8395371 6.85106589,35.6095405 5.80203488,33.1274355 C4.71695736,30.5600014 4.16666667,27.8302483 4.16666667,25.0140995 C4.16666667,22.1979507 4.71695736,19.4681975 5.80222868,16.9005695 C6.85135659,14.4185614 8.35406977,12.1886618 10.2686047,10.2727343 C12.1831395,8.35680673 14.4116279,6.85307655 16.8919574,5.80333559 C19.4578488,4.71732979 22.1857558,4.16666667 25,4.16666667 C27.8142442,4.16666667 30.5421512,4.71732979 33.1081395,5.80333559 C35.5885659,6.85317352 37.8168605,8.3569037 39.7315891,10.2727343 C41.646124,12.1885649 43.1488372,14.4185614 44.1978682,16.9005695 C45.2829457,19.4681975 45.8333333,22.1979507 45.8333333,25.0140995 C45.8333333,27.8302483 45.2829457,30.5600014 44.1977713,33.1276294 C43.1487403,35.6095405 41.6458333,37.8396341 39.7312984,39.7553677 Z" id="Shape"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </svg>
+                <p>
+                  Github
+                </p>
+              </a>  
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="mt-5">
+              This site was designed and coded by <br> &copy; 2018 Dennis K. Yip</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/creative.min.js"></script>
+
+  </body>
+
+</html>
