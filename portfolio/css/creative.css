@@ -41,6 +41,10 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
+h3 {
+    line-height: 1.6;
+}
+
 p{
   font-size: 1.125rem;
 }
@@ -236,7 +240,7 @@ header.masthead.project {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 80vh;
+    height: 100vh;
   }
 }
 
