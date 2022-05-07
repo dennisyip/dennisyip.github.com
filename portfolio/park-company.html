@@ -101,23 +101,45 @@
             <p class="mb-5"> Park Co. Realtor is a real estate brokerage in North Dakota. In 2017, Park Co. was voted as North Dakota's #1 real estate company by Real Trends. I built there current site on Boston Logic's platform powered by ruby on rails.
               <br>
               <br>
-              Currently, I am working on a redesign of the homepage, search results, listing details page, and internal quicksearch. 
+              Currently, I am working on a redesign of the homepage, search results, listing details page, and internal quicksearch.
             </p>
 
             <h3 class="section-heading text-uppercase mb-4">Tools Used</h3>
             <hr class="mb-4">
             <p class="mb-5">
-              Sketch 3, Ruby on Rails, JQuery, HTML5, CSS3 
+              Sketch 3, Ruby on Rails, JQuery, HTML5, CSS3
             </p>
 
             <a class="btn btn-primary mb-5 btn-xl" href="http://www.parkcompany.com/" target="_blank">View Website</a>
           </div>
 
           <div class="col-lg-7">
-            <img class="img-fluid full-comp-shadow" src="img/portfolio/fullsize/parkco-listing-detail.jpg" alt="">
-          </div>  
+            <!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+              <img class="img-fluid full-comp-shadow" src="img/portfolio/fullsize/parkco-listing-detail.jpg" alt="">
+            </button>
 
-
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <div><img class="img-fluid full-comp-shadow" src="img/portfolio/fullsize/parkco-listing-detail.jpg" alt=""></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- end modal -->
         </div>
       </div>
     </section>
