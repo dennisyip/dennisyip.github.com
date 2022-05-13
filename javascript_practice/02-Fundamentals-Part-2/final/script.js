@@ -58,12 +58,12 @@ console.log(age1, age2);
 ///////////////////////////////////////
 // Arrow functions
 
-const calcAge3 = birthYeah => 2037 - birthYeah;
+const calcAge3 = birthYeah => 2037 - birthYear;
 const age3 = calcAge3(1991);
 console.log(age3);
 
-const yearsUntilRetirement = (birthYeah, firstName) => {
-  const age = 2037 - birthYeah;
+const yearsUntilRetirement = (birthYear, firstName) => {
+  const age = 2037 - birthYear;
   const retirement = 65 - age;
   // return retirement;
   return `${firstName} retires in ${retirement} years`;
@@ -253,7 +253,7 @@ HINT: Remember that an array needs a value in each position, and that value can 
 
 */
 
-/*
+
 const calcTip = function (bill) {
   return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
 }
@@ -361,7 +361,7 @@ console.log(jonas.age);
 // Challenge
 // "Jonas is a 46-year old teacher, and he has a driver's license"
 console.log(jonas.getSummary());
-*/
+
 
 ///////////////////////////////////////
 // Coding Challenge #3
