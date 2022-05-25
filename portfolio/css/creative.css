@@ -216,8 +216,8 @@ header.masthead p {
 
 header.masthead.project {
   background-image: none;
-  height: 40vh;
-  min-height: 280px;
+  height: 10vh;
+  min-height: 220px;
   background-color: #000;
   padding-top: 3rem;
   padding-bottom: 0;
