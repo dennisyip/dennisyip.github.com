@@ -29,7 +29,7 @@ a {
 
 a:hover {
   color: #EDCE60;
-  opacity: 0.9;
+  opacity: 1;
 }
 
 h3 {
@@ -205,10 +205,6 @@ header.masthead hr {
   margin-bottom: 30px;
 }
 
-header.masthead h1 {
-  font-size: 2.5rem;
-}
-
 header.masthead p {
   font-weight: 300;
 }
@@ -224,6 +220,13 @@ header.masthead.project {
   padding-bottom: 0;
 }
 
+.divider-left {
+  border-bottom: 3px solid #EDCE60;
+  padding-top: 24px;
+  margin-bottom: 24px;
+  width: 88px;
+}
+
 
 @media (min-width: 768px) {
   header.masthead p {
@@ -232,13 +235,13 @@ header.masthead.project {
 
 @media (min-width: 992px) {
   header.masthead {
-    height: 60vh;
+    height: 98vh;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
@@ -355,7 +358,7 @@ header.masthead.project {
 }
 
 .down-trigger:hover {
-    background: rgba(237,206,96,0.65);
+    background: #EDCE60;
 }
 
 #triangle-down {
