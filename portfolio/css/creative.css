@@ -62,8 +62,8 @@ p{
 }
 
 .full-comp-shadow{
-  border: 1px solid #eee;
-  box-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+  box-shadow: 0px 3px 21px rgba(0,0,0,0.5);
+  border-radius: 3px;
 }
 
 section {
@@ -166,11 +166,11 @@ img::-moz-selection {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: #EDCE60;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(195, 195, 195, 0.3);
-    background-color: #000;
+    background-color: #1a1c1f;
   }
   #mainNav.navbar-shrink .navbar-brand {
     color: #FFF;
@@ -213,8 +213,8 @@ header.masthead p {
 
 header.masthead.project {
   background-image: none;
-  height: 10vh;
-  min-height: 220px;
+  height: 12vh;
+  min-height: 240px;
   background-color: #000;
   padding-top: 3rem;
   padding-bottom: 0;
@@ -389,4 +389,10 @@ header.masthead.project {
   grid-template-columns:
   repeat(2, 1fr);
   grid-gap: 30px;
+}
+
+.img-portfolio{
+  max-width: 86%;
+  height: auto;
+  border-radius: 6px;
 }
