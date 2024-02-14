@@ -32,8 +32,12 @@ a:hover {
   opacity: 1;
 }
 
+h2{
+  font-size: 2.25rem;
+}
+
 h3 {
-    line-height: 1.6;
+  line-height: 1.6;
 }
 
 p{
@@ -215,7 +219,7 @@ header.masthead.project {
   background-image: none;
   height: 12vh;
   min-height: 240px;
-  background-color: #000;
+  background-color: #181c1f;
   padding-top: 3rem;
   padding-bottom: 0;
 }
@@ -384,15 +388,22 @@ header.masthead.project {
 
 /* CSS Grid */
 
+.grid-wrapper-one{
+  display: grid;
+  grid-template-columns:
+  repeat(1, 1fr);
+  grid-gap: 24px;
+}
+
 .grid-wrapper {
   display: grid;
   grid-template-columns:
   repeat(2, 1fr);
-  grid-gap: 30px;
+  grid-gap: 24px;
 }
 
 .img-portfolio{
   max-width: 86%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 3px;
 }
