@@ -179,49 +179,57 @@
       <div class="container">
         <div class="col-lg-12">
           <h2 class="section-heading font-weight-bold mb-5">Strategize</h2>
-          <p class="mt-5 mb-5">From the research we gathered, the team and I began to brainstorm the short term and long term goals for performance testing. We realized it would be a difficult to deliver and implement both API and browser load testing all at once. Based on the timeline, we decided to first design and build the ability to create API performance tests because that was where the most complex logic lived. In the second half of the year we would add browser tests with captured core web vitals.</p>
-
-          <h2 class="section-heading font-weight-bold mb-5">Wireframes</h2>
-          <div class="grid-wrapper">
-            <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/whiteboard.jpg" alt="">
-            <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_responsetime.jpg" alt="">
-            <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_response_details.jpg" alt="">
-            <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_endpoints.jpg" alt="">
-          </div>
-
-          <h4 class="section-heading font-weight-bold mt-5 mb-3">Mistakes of early wireframes</h4>
-           <p class="mb-5">From our early concepts, we worked on creating various wireframes to help us understand the information heirarchy and interactions of each deeper level metrics. We went through hundreds of iterations of the test creation form, test details, and results page. From our wireframes we conducted more user testing to identfied usablilty issues and points of confusion. This is a summary of things we discovered:</p>
-
-          <ol class="mb-5">
-            <li>There is no ablity to filter the graph a particular test step.</li>
-            <li>It is confusing to show historical test run metric information in the Response Time and Response Details tabs.</li>
-            <li>Cannot zoom into graph to see a given timeframe of metrics captured.</li>
-            <li>In ability to add or remove metrics displayed on graph.</li>
-            <li>It is better to display median metrics vs averages because the 50th, 75th and 90th percentile median give a more accurate representation of the application's performance.</li>
-          </ol>
-
-
-
-          <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test & Metrics</h4>
-           <p class="mb-5">With the addition of browser loading testing, the team was faced with new challenges to capture, store, and analyze browser test metrics. I conducted research online to understand the underlying performance scores of core web vitals captured. This information was crucial in helping design the failure criteria thresholds for a browser performance test.</p>
-
-          <div class="container">
-            <div class="grid-wrapper">
-              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv1.jpg" alt="">
-              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv3.jpg" alt="">
-              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv2.jpg" alt="">
-            </div>
-          </div>
+          <p class="mt-5 mb-5">From the research we gathered, the team and I began to brainstorm the short term and long term goals. We realized it would be a difficult implement and deliver both API and browser load testing at the same time. Based on the timeline, we decided to first design and build the ability to create API performance tests because that was where the most complex logic lived. In the second half of the year we would add browser tests with captured core web vitals.</p>
         </div>
       </div>
     </section>
-
-
-
-
+        
 
 
     <section class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">          
+            <h2 class="section-heading font-weight-bold mb-5">Wireframes</h2>
+            <div class="grid-wrapper">
+              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/whiteboard.jpg" alt="">
+              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_responsetime.jpg" alt="">
+              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_response_details.jpg" alt="">
+              <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_endpoints.jpg" alt="">
+            </div>
+
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">Mistakes of early wireframes</h4>
+             <p class="mb-5">From our early concepts, we worked on creating various wireframes to help us understand the information heirarchy and interactions of each deeper level metrics. We went through hundreds of iterations of the test creation form, test details, and results page. From our wireframes we conducted more user testing to identfied usablilty issues and points of confusion. This is a summary of things we discovered:</p>
+
+            <ol class="mb-5">
+              <li>There is no ablity to filter the graph by a individual test step.</li>
+              <li>In the Response Time and Response Details tabs, at first glance is confusing to show historical test run metric information.</li>
+              <li>Cannot zoom into graph to see the metrics captured in a specific timeframe.</li>
+              <li>No functionality to add or remove metrics displayed on graph.</li>
+              <li>It is better to display median metrics vs averages because the 50th, 75th and 90th percentile median give a more accurate representation of the application's performance.</li>
+            </ol>
+
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test & Metrics</h4>
+             <p class="mb-5">With the addition of browser loading testing, the team was faced with the new challenge to capture, store, and analyze browser test metrics. I conducted research online to understand the thresholds scores of core web vitals captured by Google. Core web vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability. This information was crucial in helping me design the failure criteria options for a browser test.</p>
+
+            <div class="container">
+              <div class="grid-wrapper">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv1.jpg" alt="">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv3.jpg" alt="">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv2.jpg" alt="">
+              </div>
+            </div>
+          </div>
+          <!-- end row -->
+        </div>
+      </div>  
+    </section>  
+
+
+
+
+
+    <section class="">
       <div class="container">
         <div class="col-lg-12">
           <h2 class="section-heading font-weight-bold mb-5">Final Designs</h2>

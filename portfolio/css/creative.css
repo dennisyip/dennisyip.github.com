@@ -46,10 +46,17 @@ p{
 
 ol {
   line-height: 1.6;
+  background: #fff;
+  padding: 1.5rem 3rem;
+  border-radius: 6px;
 }
 
 ol li{
   margin-bottom: 1rem;
+}
+
+ol li:last-child{
+  margin-bottom: 0.25rem;
 }
 
 .text-small{
