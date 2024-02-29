@@ -440,4 +440,32 @@ figure {
   margin-bottom: 2rem;
 }
 
+figcaption {
+  background-color: #FFF;
+  border-top: 1px solid #e9ecef;
+  padding: 1.5rem;
+  line-height: 1.5;
+}
 
+
+/* Masonry Grid */
+
+.masonry-grid {
+  -moz-column-count: 4;
+  column-count: 4;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+}
+
+.masonry-thumbnail {
+  display: block;
+  margin-bottom: 24px;
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 800px;
+  transition: all .15s ease-in-out;
+}
+
+.next-img-fluid {
+  width: 100%;
+}
