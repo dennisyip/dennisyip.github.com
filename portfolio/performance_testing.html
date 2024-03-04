@@ -133,7 +133,7 @@
               </div>  
             </div>
 
-            <p class="mt-5 mb-5">After researching over six different competitors, we discovered that each software tool applied settings and load parameters at the test level. Each test is composed of multiple API requests or browser steps. The reporting of results can then be filtered by individual test steps. From this research, we outlined the set of test settings and reporting requirements.</p>
+            <p class="mt-5 mb-5">After researching over six different competitors, we discovered that each software applied settings and load parameters at the test level. Each test is composed of multiple API requests or browser steps. The reporting of results can then be filtered by individual test steps. From this research, we outlined the set of test settings and reporting requirements.</p>
 
             <div class="row">
               <div class="col-lg-6">
@@ -188,8 +188,6 @@
         </div>
       </div>
     </section>
-        
-
 
     <section class="bg-light">
       <div class="container">
@@ -204,24 +202,25 @@
             </div>
 
             <h4 class="section-heading font-weight-bold mt-5 mb-3">Mistakes of early wireframes</h4>
-             <p class="mb-5">In early stage concepts, I worked on creating wireframes to help us understand the information heirarchy, interaction, and the most important set of metrics to display. I went through hundreds of iterations of the test creation form, test details, and results page. From the wireframes I conducted more user testing to evaluate the designs, in which I identfied usablilty issues and points of confusion. This is a summary of things I discovered from process:</p>
+             <p class="mb-5">In early stage concepts, I worked on creating wireframes to help us understand the information heirarchy, interactions, and the most important metrics to display. I went through hundreds of iterations of the test creation form and results pages. From the wireframes I conducted a second round of user testing to evaluate the designs in which I identfied usablilty issues and points of confusion. Here is summary of my I discoveries:</p>
 
             <ol class="mb-5">
-              <li>There is no ablity to filter the graph by a individual test step.</li>
-              <li>In the Response Time and Response Details tabs, at first glance is confusing to show historical test run metric information.</li>
-              <li>Cannot zoom into graph to see the metrics captured in a specific timeframe.</li>
-              <li>No functionality to add or remove metrics displayed on graph.</li>
+              <li>No ablity to filter the graph by a individual test step.</li>
+              <li>Response Time and Response Details tabs should be renamed both tabs show historical test run metric information.</li>
+              <li>A user cannot zoom into graph to see the metrics captured in a specific timeframe.</li>
+              <li>Users want the ability to add and remove metrics displayed on graph.</li>
               <li>It is better to display median metrics vs averages because the 50th, 75th and 90th percentile median give a more accurate representation of the application's performance.</li>
             </ol>
 
             <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test & Metrics</h4>
              <p class="mb-5">With the addition of browser loading testing, the team was faced with the new challenge to capture, store, and analyze browser test metrics. I conducted research online to understand the thresholds scores of core web vitals captured by Google. Core web vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability. This information was crucial in helping me design the failure criteria options for a browser test.</p>
 
-            <div class="container">
+            <div class="container p-0">
               <div class="grid-wrapper">
                 <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv1.jpg" alt="">
-                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv3.jpg" alt="">
                 <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv2.jpg" alt="">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv3.jpg" alt="">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv4.jpg" alt="">
               </div>
             </div>
           </div>
@@ -237,8 +236,26 @@
     <section class="">
       <div class="container">
         <div class="col-lg-12">
+          <h2 class="section-heading font-weight-bold mb-5">Final Prototype</h2>
+        </div>
+        <!-- test results prototupe video -->
+        <div class="col-lg-12 p-0 mb-5">
+          <figure>
+            <video id="vid" playsinline autoplay muted loop>
+              <source src="videos/test_results.mp4" type="video/mp4">
+            </video>
+            <script>
+                document.getElementById('vid').play();
+            </script>
+            <figcaption><span>Test results prototype</span></figcaption>
+          </figure>
+        </div>
+        <!-- end video -->
+
+        <div class="col-lg-12">
           <h2 class="section-heading font-weight-bold mb-5">Final Designs</h2>
         </div>
+
         <div class="grid-wrapper-one">
           <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/perf_testing_card.jpg" alt="">
           <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/test_creation_form.jpg" alt="">
