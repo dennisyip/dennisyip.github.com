@@ -162,18 +162,29 @@
             </div>  
 
             <h4 class="section-heading font-weight-bold mt-3 mb-3">User Research</h4>
-            <p class="mb-5">We met with eight of our largest clients to understand their organizations needs for performance testing. The individuals we interviewed included CEO's, engineering managers, and QA testers & engineers. From our interviews we discovered:</p>
+            <p class="mb-5">We met with eight of our largest clients to understand their organizations needs for performance testing. The individuals we interviewed included CEO's, engineering managers, and QA engineers. From our interviews we discovered:</p>
 
             <div class="col-lg-12">
-              <h4 class="section-heading font-weight-bold mb-3">Key Findings</h4>
+              <h4 class="section-heading font-weight-bold mb-3">Key Findings:</h4>
               <ol class="mb-5">
                 <li>Load testing for Browsers & APIs are both common use-cases, but API load testing was the higher priority.</li>
-                <li>About 75% of customers found a greater need for API testing.</li>
+                <li>75% of customers found a greater need for API testing.</li>
                 <li>API endpoint-level metrics and page-level URL performance is top of mind when viewing results.</li>
+                <li>Need to be able to set pass/fail thresholds for response time & error rate percentiles</li>
                 <li>It is important to capture historical metrics overtime to measure performance and understand if you're gaining or losing ground.</li>
-                <li>For browser loading testing, there is currently no way to assess how core web vitals change under load.</li>
+                <li>For browser loading testing, there is currently no way to access how core web vitals change under load.</li>
               </ol>
             </div>
+
+            <h4 class="section-heading font-weight-bold mt-3 mb-3">Core User Persona</h4>
+            <div class="container">
+              <div class="row">
+                <div class="grid-wrapper-one">
+                  <img class="img-fluid" src="img/portfolio/mabl_perf_testing/persona_QA_engineer.jpg" alt="">
+                </div>
+              </div>  
+            </div>
+
           </div>
         </div>
       </div>
@@ -184,7 +195,8 @@
       <div class="container">
         <div class="col-lg-12">
           <h2 class="section-heading font-weight-bold mb-5">Strategize</h2>
-          <p class="mt-5 mb-5">From the research we gathered, the team and I began to brainstorm the short term and long term goals. We realized it would be a difficult implement and deliver both API and browser load testing at the same time. Based on the timeline, we decided to first design and build the ability to create API performance tests because that was where the most complex logic lived. In the second half of the year we would add browser tests with captured core web vitals.</p>
+          <p class="mt-5 mb-5">From the research we gathered, the team and I began to brainstorm the short term and long term goals. 
+          We realized it would be a difficult implement both API and browser load testing at the same time. Based on the timeline, we decided to first design the ability to create API performance tests because that was where the most complex logic lived. Then in the second half of the year focus on building the addition of browser performance tests with captured core web vitals.</p>
         </div>
       </div>
     </section>
@@ -201,9 +213,10 @@
               <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/wireframe_endpoints.jpg" alt="">
             </div>
 
-            <h4 class="section-heading font-weight-bold mt-5 mb-3">Mistakes of early wireframes</h4>
-             <p class="mb-5">In early stage concepts, I worked on creating wireframes to help us understand the information heirarchy, interactions, and the most important metrics to display. I went through hundreds of iterations of the test creation form and results pages. From the wireframes I conducted a second round of user testing to evaluate the designs in which I identfied usablilty issues and points of confusion. Here is summary of my I discoveries:</p>
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">Early wireframes</h4>
+             <p class="mb-5">In early stage concepts, I created wireframes to help understand the information heirarchy, interactions, and the most important metrics to display. I went through hundreds of iterations of the test creation form and results pages. From the wireframes I conducted user testing to evaluate the designs. From my research I identfied usablilty issues and points of confusion. Here is summary of my I discoveries:</p>
 
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">Mistakes from early wireframes</h4> 
             <ol class="mb-5">
               <li>No ablity to filter the graph by a individual test step.</li>
               <li>Response Time and Response Details tabs should be renamed both tabs show historical test run metric information.</li>
@@ -213,7 +226,7 @@
             </ol>
 
             <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test & Metrics</h4>
-             <p class="mb-5">With the addition of browser loading testing, the team was faced with the new challenge to capture, store, and analyze browser test metrics. I conducted research online to understand the thresholds scores of core web vitals captured by Google. Core web vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability. This information was crucial in helping me design the failure criteria options for a browser test.</p>
+             <p class="mb-5">With the addition of browser loading testing, the team was faced with the new challenge to capture, store, and analyze browser test metrics. I conducted research online to understand the thresholds scores of core web vitals captured. Core web vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability. This information was crucial in helping me design the failure criteria options for a browser test.</p>
 
             <div class="container p-0">
               <div class="grid-wrapper">
@@ -223,6 +236,10 @@
                 <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv4.jpg" alt="">
               </div>
             </div>
+
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">The final product</h4>
+            <p class="mb-5">Based on my discoveries, I made a number of changes to the test results page. I conducted a second round of user testing to evaluate users reactions.  The results were promising, with a 87% increase in overall satisfaction to use and buy product. You can see an example of the final prototype below:</p>
+
           </div>
           <!-- end row -->
         </div>
