@@ -451,21 +451,53 @@ figcaption {
 /* Masonry Grid */
 
 .masonry-grid {
-  -moz-column-count: 4;
-  column-count: 4;
+  -moz-column-count: 3;
+  column-count: 3;
   -moz-column-gap: 24px;
   column-gap: 24px;
 }
 
+.masonry-grid.two-column {
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-gap: 24px;
+  column-gap: 24px;
+}
+
+@media (max-width: 1068px) {
+  .masonry-grid, .masonry-grid.two-column {
+    -moz-column-count: 1;
+    column-count: 1;
+    -moz-column-gap: 0px;
+    column-gap: 0px;
+  }
+}
+
 .masonry-thumbnail {
   display: block;
+  box-shadow: 0.25em 0.25em 2em rgba(0,0,0,.25);
   margin-bottom: 24px;
   border-radius: 6px;
   overflow: hidden;
-  max-height: 800px;
+  max-height: 1600px;
   transition: all .15s ease-in-out;
 }
 
 .next-img-fluid {
   width: 100%;
+}
+
+.next-img-fluid>span {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  width: initial;
+  height: initial;
+  background: none;
+  opacity: 1;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+  inset: 0px;
+  position: unset!important;
 }
