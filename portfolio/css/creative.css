@@ -32,6 +32,10 @@ a:hover {
   opacity: 1;
 }
 
+h1{
+  font-size: 3rem;
+}
+
 h2{
   font-size: 2.25rem;
 }
@@ -288,10 +292,6 @@ header.masthead.project {
   }
 }
 
-.service-box {
-  max-width: 400px;
-}
-
 .portfolio-box {
   position: relative;
   display: block;
@@ -538,4 +538,23 @@ figcaption {
   width: 100%;
 }
 
+/* Mobile styles */
 
+@media (max-width: 768px) {
+  .xs-text-center{
+    text-align: center;
+  }
+
+  .xs-padding{
+    padding: 0 2rem;
+  }
+
+  .xs-restore-padding{
+    padding: 0 15px !important;
+  }
+
+  .divider-left{
+    margin: 0 auto;
+  }
+
+}
