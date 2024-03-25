@@ -110,7 +110,7 @@ ol li:last-child{
 
 .full-comp-shadow{
   box-shadow: 0px 3px 21px rgba(0,0,0,0.5);
-  border-radius: 3px;
+  border-radius: 6px;
 }
 
 section {
@@ -432,6 +432,10 @@ header.masthead.project {
   grid-template-columns:
   repeat(1, 1fr);
   grid-gap: 24px;
+}
+
+.grid-wrapper-one .img-fluid{
+  max-width: 100%;
 }
 
 .grid-wrapper {
