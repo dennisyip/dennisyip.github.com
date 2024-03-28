@@ -113,6 +113,10 @@ ol li:last-child{
   border-radius: 6px;
 }
 
+.wide-container{
+  max-width: 88vw;
+}
+
 section {
   padding: 4rem 0;
 }
@@ -429,8 +433,7 @@ header.masthead.project {
 
 .grid-wrapper-one{
   display: grid;
-  grid-template-columns:
-  repeat(1, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-gap: 24px;
 }
 
@@ -440,8 +443,7 @@ header.masthead.project {
 
 .grid-wrapper {
   display: grid;
-  grid-template-columns:
-  repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 24px;
 }
 
@@ -450,6 +452,14 @@ header.masthead.project {
   height: auto;
   border-radius: 3px;
 }
+
+@media (max-width: 768px) {
+  .grid-wrapper, .grid-wrapper-one {
+    grid-template-columns:repeat(1, 1fr);
+    margin: 0 15px;
+  }
+}
+
 
 /* Video support */
 
@@ -545,6 +555,15 @@ figcaption {
 /* Mobile styles */
 
 @media (max-width: 768px) {
+
+  h1{
+    font-size: 2.25rem;
+  }
+
+  h2{
+    font-size: 1.75rem;
+  }
+
   .xs-text-center{
     text-align: center;
   }
