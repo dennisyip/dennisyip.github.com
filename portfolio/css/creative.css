@@ -304,6 +304,7 @@ header.masthead.project {
   max-height: 250px;
   overflow: hidden;
   box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+  border-radius: 3px;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -315,7 +316,7 @@ header.masthead.project {
   text-align: center;
   opacity: 0;
   color: #000;
-  background: rgba(237, 206, 96,0.85);
+  background: rgba(237, 206, 96,0.86);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -332,7 +333,6 @@ header.masthead.project {
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
   padding: 0 15px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -356,6 +356,7 @@ header.masthead.project {
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
+    margin-bottom: 3px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
     font-size: 1.25rem;
