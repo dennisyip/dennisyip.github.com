@@ -328,6 +328,8 @@ header.masthead.project {
   width: 100%;
   transform: translateY(-50%);
   text-align: center;
+  background: #FFF;
+  padding: 1rem;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
@@ -337,8 +339,6 @@ header.masthead.project {
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
   font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
 }
 
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
@@ -355,7 +355,7 @@ header.masthead.project {
 
 @media (min-width: 768px) {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-    font-size: 16px;
+    font-size: 1rem;
     margin-bottom: 3px;
   }
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
