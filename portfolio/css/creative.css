@@ -48,6 +48,21 @@ p{
   font-size: 1.125rem;
 }
 
+p a{
+  color: currentColor;
+  text-decoration: none;
+  background-image: linear-gradient(120deg, currentColor, currentColor 100%);
+  background-repeat: no-repeat;
+  background-size: 100% .1em;
+  background-position: 0 100%;
+  transition: all .15s ease-in-out;
+}
+
+p a:hover{
+  text-decoration: none;
+}
+
+
 ol {
   line-height: 1.6;
   background: #fff;

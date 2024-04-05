@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Mabl company dashboard</title>
+    <title>Performance Testing | mabl</title>
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -94,7 +94,7 @@
         <div class="row">
           <div class="col-lg-12">
             <h3 class="section-heading font-weight-bold mb-4">Overview</h3>
-            <p class="mb-5">In 2023, mabl developed and launched a new product to allow users to create and run performance tests. I led the research, ideation, and design of the new product experience that result in a 32% increase in overall user adoption.</p>
+            <p class="mb-5">In 2023, mabl developed and launched a new product to allow users to create and run performance tests. I led the research, ideation, and design of the new product experience that result in a <b>32%</b> increase in overall user adoption.</p>
           </div>
 
           <!-- project info -->
@@ -215,7 +215,7 @@
             </div>  
 
             <h4 class="section-heading font-weight-bold mt-3 mb-3">User Interviews</h4>
-            <p class="mb-5">We met with eight of our largest clients to understand their needs for performance testing. The users included of CEO's, engineering managers, and QA engineers. From our interviews we discovered:</p>
+            <p class="mb-5">We met with ten of our largest clients to understand their needs for performance testing. The users included of CEO's, engineering managers, software and QA engineers. From our interviews we discovered:</p>
 
             <div class="col-lg-12 p-0">
               <ul class="caret-list mb-5">
@@ -255,8 +255,13 @@
       <div class="container">
         <div class="col-lg-12">
           <h2 class="section-heading font-weight-bold mb-5">Strategize</h2>
-          <p class="mt-5 mb-5">From the research we gathered, the team and I began to brainstorm the short term and long term goals. 
-          We realized it would be a difficult implement both API and browser load testing at the same time. Based on the timeline, we decided to first design the ability to create API performance tests because that was where the most complex logic lived. Then in the second half of the year focus on building the addition of browser performance tests with captured core web vitals.</p>
+          <p class="mt-5 mb-5">Based on the research we gathered, we brainstormed both short-term and long-term goals to establish a product roadmap for the year.</p>
+
+          <div class="grid-wrapper-one mb-4">
+            <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/road_map.png" alt="product road map">
+          </div>
+
+          <p class="mt-5 mb-3"> Based on our timeline, we decided to first design and implement API performance testing. <br> In the second half of 2023, we focus on the addition of browser load tests with captured <a class="js-scroll-trigger" href="#cwv"><b>Core Web Vitals</b></a>.</p>
         </div>
       </div>
     </section>
@@ -290,11 +295,21 @@
               </div>  
             </div>
 
+          </div>
+          <!-- end row -->
+        </div>
+      </div>  
+    </section>
 
-            <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test & Metrics</h4>
-             <p class="mb-5">With the addition of browser loading testing, the team was faced with the new challenge to capture, store, and analyze browser test metrics. I conducted research online to understand the threshold scores of core web vitals captured. Core web vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability. This information was crucial in helping me design the failure criteria options for a browser test.</p>
+    <section id="cwv" class="">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading font-weight-bold mb-5">Core Web Vitals</h2>
+            <h4 class="section-heading font-weight-bold mt-5 mb-3">Adding Browser Test Metrics</h4>
+            <p class="mb-5">Introducing browser performance testing presented a new challenge in designing failure criteria options and displaying Core Web Vitals in the test results. Through the product development cycle, I conducted design research to comprehend the threshold scores captured and devise an appropriate solution.</p>
 
-            <div class="container p-0">
+            <div class="container p-0 mb-5">
               <div class="grid-wrapper">
                 <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv1.jpg" alt="">
                 <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/research_cwv2.jpg" alt="">
@@ -303,14 +318,32 @@
               </div>
             </div>
 
-            <h4 class="section-heading font-weight-bold mt-5 mb-3">The final product</h4>
-            <p class="mb-5">Based on my discoveries, I made a number of changes to the test results page. I conducted a second round of user testing to validate usablity. The results were promising, with a 87% increase in overall satisfaction. You can see an example of the final prototype below:</p>
+            <p class="mb-5">Core Web Vitals is a set of metrics that measure a web page's loading performance, interactivity, visual stability.</p>
+
+            <h4 class="section-heading font-weight-bold mt-5 mb-5">Designing CWV failure criteria</h4>
+            <div class="container p-0">
+              <div class="grid-wrapper-one">
+                <img class="img-fluid full-comp-shadow" src="img/portfolio/mabl_perf_testing/cwv_failure_criteria.png" style="max-width: 72%;" alt="">
+              </div>
+            </div>
 
           </div>
-          <!-- end row -->
         </div>
       </div>  
     </section>  
+
+
+    <section  class="bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading font-weight-bold mb-5">Result</h2>
+            <p class="mb-3">After launching the performance testing in December of 2023, we observed a significant <b>32%</b> increase in user adoption.</p>
+            <p class="">Additionally, we discovered a remarkable <b>53%</b> surge in the time spent in the app. Our customers praised the simplicity, comprehensiveness, and insightfulness of conducting performance tests on the mabl testing platform.</p>
+          </div>
+        </div>
+      </div>  
+    </section>
 
 
     <section class="">
