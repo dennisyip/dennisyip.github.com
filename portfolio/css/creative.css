@@ -476,6 +476,15 @@ header.masthead.project {
   }
 }
 
+/* Modals */
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    width: 100%;
+    max-width: 830px;
+  }
+}
+
 
 /* Video support */
 
